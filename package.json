@@ -1,0 +1,16 @@
+{
+  "name": "electron-swagger-editor",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Josa Gesell <josa@gesell.me>",
+  "license": "MIT",
+  "dependencies": {
+    "electron-packager": "^8.6.0",
+    "electron-prebuilt": "^1.4.13",
+    "screen": "^0.2.10"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . 'Swagger Editor' --overwrite --platform=darwin --out='dist/' --asar=true --icon=./icon.icns"
+  }
+}
